@@ -1,0 +1,146 @@
+a {
+    text-decoration: none;
+    color: rgb(37,35,38);
+}
+a:hover {
+    background-color:#F27E88;
+    margin: -5px;
+    padding: 5px;
+}
+body {
+    font-family: "League Spartan";
+    margin: auto;
+    width: 100%;
+    padding: 0;
+}
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: auto;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width:160px;
+}
+.dropdown-content li {
+    padding: 10px;
+}
+.flower {
+    display: flex;
+    flex: 0 0 40%;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.flower img {
+    width: 75%;
+    height: auto;
+    border: #F27E88 solid;
+    border-width: 2px;
+    padding: 50px;
+}
+footer {
+    background-color: #C1D4D9;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+header {
+    padding: 20px 0;
+    text-align: center;
+}
+h1 {
+    color: #591C27;
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: 500;
+}
+.inline-header {
+    display:inline-block;
+    vertical-align: top;
+    margin-right: 20px;
+}
+li {
+    display: inline-block;
+    padding: 0 40px 0 40px;
+}
+
+nav {
+    text-transform: uppercase;
+    padding: 50px 0;
+    box-shadow: 0px 5px 0px #dedede;
+    width: 80%;
+    margin: 0 auto;
+}
+.navbar {
+    list-style-type: none;
+    display: flex;
+}
+nav.fill ul li a {
+    transition: all 0.5s;
+  }
+  
+  nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+  }
+  nav.fill ul li a:hover {
+    color: rgb(37,35,38);
+    z-index: 1;
+  }
+  nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 0.5s forwards;
+    -webkit-animation: fill 0.5s forwards;
+    -moz-animation: fill 0.5s forwards;
+    opacity: 1;
+  }
+  .menu-toggle {
+    display: none;
+  }
+
+  /*media query for smaller screens*/
+
+  @media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+      }
+      .navbar li {
+        display: block;
+        text-align: center;
+      }
+      .dropdown-content {
+        display: block;
+      }
+      .menu-toggle {
+        display: block;
+        top: 10px;
+        right: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 5px 10px;
+        cursor:pointer;
+      }
+      
+  }
+
+  /*media query for larger screens*/
+  @media screen and (min-width:769px) {
+    .dropdown {
+        display: none;
+    }
+  }
+ 
+  
